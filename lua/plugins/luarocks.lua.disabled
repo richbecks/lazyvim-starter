@@ -1,0 +1,9 @@
+return {
+  "camspiers/luarocks",
+  dependencies = {
+    "rcarriga/nvim-notify", -- Optional dependency
+  },
+  opts = {
+    rocks = { "luaexpat" }, -- Specify LuaRocks packages to install
+  },
+}

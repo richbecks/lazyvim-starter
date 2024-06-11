@@ -1,0 +1,11 @@
+return {
+  "empat94/nvim-rss",
+  dependencies = { "tami5/sqlite.lua" },
+  opts = {
+    feeds_dir = "/Users/richardj/.config/nvim-rss", -- ensure has write permissions (use full path to dir)
+    date_format = "%x %r",
+  },
+  keys = {
+    { "<leader>rf", vim.fn["nvim-rss#open_rss_feeds"], desc = "Open RSS Feeds List" },
+  },
+}
