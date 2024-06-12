@@ -1,0 +1,13 @@
+return {
+  {
+    "loganswartz/sunburn.nvim",
+    dependencies = { "loganswartz/polychrome.nvim" },
+  },
+  {
+    "LazyVim/LazyVim",
+    dependencies = { "loganswartz/sunburn.nvim" },
+    opts = {
+      colorscheme = "sunburn",
+    },
+  },
+}
