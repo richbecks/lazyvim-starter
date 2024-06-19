@@ -1,0 +1,17 @@
+return {
+  "akinsho/toggleterm.nvim",
+  version = "*",
+  opts = {
+    direction = "float",
+    float_opts = {
+      border = "curved",
+    },
+  },
+  open_mapping = [[<c-_>]],
+  config = true,
+  keys = {
+    { "<leader>0", "<Cmd>0ToggleTerm<Cr>", desc = "Terminal #0" },
+    { "<leader>1", "<Cmd>1ToggleTerm<Cr>", desc = "Terminal #1" },
+    { "<leader>2", "<Cmd>2ToggleTerm<Cr>", desc = "Terminal #2" },
+  },
+}
