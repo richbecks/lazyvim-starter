@@ -2,9 +2,13 @@ return {
   {
     "joshuadanpeterson/typewriter",
     dependencies = "nvim-treesitter/nvim-treesitter",
-    opts = {},
+    -- tag = "v0.1.5",
+    opts = {
+      enable_notifications = false,
+    },
     init = function()
-      require("typewriter").enable()
+      -- require("typewriter").setup()
+      require("typewriter.commands").enable_typewriter_mode()
     end,
   },
 }
