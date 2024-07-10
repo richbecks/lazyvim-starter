@@ -5,5 +5,10 @@
 local Util = require("lazyvim.util")
 
 vim.keymap.set("n", "<C-_>", function()
-  Util.terminal(nil, { border = "rounded" })
+  Util.terminal(nil, {
+    -- border = "rounded",
+    border = "none",
+    margin = { top = 0, bottom = 1, left = 0, right = 0 },
+    size = { width = vim.o.columns, height = vim.o.lines },
+  })
 end, { desc = "Term with border" })
