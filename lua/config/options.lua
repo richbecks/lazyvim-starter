@@ -6,3 +6,4 @@ local opt = vim.opt
 
 opt.mouse = ""
 opt.clipboard = ""
+opt.ignorecase = false
