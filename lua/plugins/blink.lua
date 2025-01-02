@@ -10,9 +10,7 @@ return {
     keymap = { preset = "super-tab" },
 
     sources = {
-      completion = {
-        enabled_providers = { "codecompanion" },
-      },
+      default = { "lsp", "path", "codecompanion" },
       providers = {
         codecompanion = {
           name = "CodeCompletion",
