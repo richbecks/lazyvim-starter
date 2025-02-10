@@ -3,32 +3,20 @@ return {
   lazy = false,
   keys = {
     {
-      "<c-,>",
+      "<c-/>",
       function()
         Snacks.terminal(os.getenv("SHELL"), {
           win = {
-            width = 0.95,
-            height = 0.95,
+            width = 0.98,
+            height = 0.98,
             fixbuf = true,
             position = "float",
+            border = "rounded",
+            relative = "editor",
           },
         })
       end,
       desc = "Toggle Terminal",
-    },
-    {
-      "<c-_>",
-      function()
-        Snacks.terminal(os.getenv("SHELL"), {
-          win = {
-            width = 0.95,
-            height = 0.95,
-            fixbuf = true,
-            position = "float",
-          },
-        })
-      end,
-      desc = "which_key_ignore",
     },
   },
 }

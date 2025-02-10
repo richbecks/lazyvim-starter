@@ -7,10 +7,10 @@ return {
   config = function()
     -- Refer to: https://github.com/olimorris/codecompanion.nvim/blob/main/lua/codecompanion/config.lua
     require("codecompanion").setup({
-      name = "llama3",
+      name = "deepseek-r1",
       schema = {
         model = {
-          default = "llama3:latest",
+          default = "deepseek-r1:8b",
         },
       },
       strategies = { -- Change the adapters as required

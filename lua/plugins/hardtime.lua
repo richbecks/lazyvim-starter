@@ -5,8 +5,8 @@ return {
     lazy = false,
     opts = {
       disabled_keys = {
-        ["h"] = { "n", "x" },
-        ["l"] = { "n", "x" },
+        -- ["h"] = { "n", "x" },
+        -- ["l"] = { "n", "x" },
       },
     },
   },
